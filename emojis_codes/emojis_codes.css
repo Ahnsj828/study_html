@@ -1,0 +1,53 @@
+/* ---<< 이모지 리스트 공통 스타일 >>--- */
+ul.title {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  gap: 16px;
+  /* 항목 사이 간격 (이모지들 사이 간격) */
+  margin: 50px 50px auto;
+  justify-items: center;
+  /* 이모지를 각 셀 중앙 정렬 */
+  padding: 10px;
+  border: 1px solid #b4b4b4;
+  border-radius: 10px;
+}
+
+/* ---<< 이모지 리스트 공통 두번째 스타일 >>--- */
+ul.title {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 60px);
+  gap: 16px;
+  justify-content: start;
+  margin: 50px 50px auto;
+  padding: 10px;
+  border: 1px solid #b4b4b4;
+  border-radius: 10px;
+}
+
+/* ---<< 개별 이모지 항목 스타일 >>--- */
+ul.title li {
+  font-size: 45px;
+  text-align: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+ul.title li:hover {
+  transform: scale(1.2);
+}
+
+.emoji-tooltip {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0.9;
+  z-index: 100;
+}
