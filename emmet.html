@@ -6,11 +6,106 @@
     <title>emmet_에밋</title>
   </head>
   <body>
+    <!-- [ 1. 클래스 지정 👉🏻 . ]-->
+    <!-- div.classname -->
+    <div class="classname"></div>
+
+    <!-- [ 2. 아이디 지정 👉🏻 # ]-->
+    <!-- div#idname -->
+    <div id="idname"></div>
+
+    <!-- [ 3. 자식 관계 👉🏻 > ]-->
+    <!-- ul > li -->
+    <ul>
+      <li></li>
+    </ul>
+
+    <!-- [ 4. 형제 관계 👉🏻 + ]-->
+    <!-- h1 + p + p -->
+    <h1></h1>
+    <p></p>
+    <p></p>
+
+    <!-- [ 5. 중첩 그룹 👉🏻 () ]-->
+    <!-- div>(h1+p) -->
+    <div>
+      <h1></h1>
+      <p></p>
+    </div>
+
+    <!-- [ 6. 반복 곱하기 👉🏻 *숫자 ]-->
+    <!-- li*3 -->
+    <li></li>
+    <li></li>
+    <li></li>
+
+    <!-- [ 7. 자동 번호 매기기 👉🏻 *숫자 ]-->
+    <!-- li.item$*3 -->
+    <li class="item1"></li>
+    <li class="item2"></li>
+    <li class="item3"></li>
+
+    <!-- [ 8. 지정 넘버부터 시작할때 👉🏻 @숫자*숫자 ]-->
+    <!-- li.item$@9*4 -->
+    <li class="item9"></li>
+    <li class="item10"></li>
+    <li class="item11"></li>
+    <li class="item12"></li>
+    <!-- 💡 단, 이때 뒤에  *숫자 해줘야 한다. 안 붙이면 안된다. -->
+    <!-- li.item$@9 -->
+    <li class="item1"></li>
+
+    <!-- [ 9. 내용 넣기 👉🏻 {} ]-->
+    <!-- p{Hello World} -->
+    <p>Hello World</p>
+
+    <!-- [ 10. 속성 지정 👉🏻 [] ]-->
+
+    <!-- 10-1. input 태그 속성 지정 -->
+    <!-- input[type="text"][placeholder="이름을 입력하세요"] -->
+    <input type="text" placeholder="이름을 입력하세요" />
+
+    <!-- 10-2. a태그 (링크 속성) -->
+    <!-- a[href="https://example.com"][target="_blank"] -->
+    <a href="https://example.com" target="_blank"></a>
+
+    <!-- 10-3. img태그 (이미지 속성) -->
+    <!-- img[src="image.jpg"][alt="샘플 이미지"] -->
+    <img src="image.jpg" alt="샘플 이미지" />
+
+    <!-- 10-4. button 태그 + 타입 지정 -->
+    <!-- button[type="submit"][disabled] -->
+    <button type="submit" disabled></button>
+
+    <!-- 10-5. div에 data- 속성 추가* -->
+    <!-- div[data-role="modal"][data-id="123"] -->
+    <div data-role="modal" data-id="123"></div>
+
+    <!-- 10-6. form 태그 예시 -->
+    <!-- form[action="/submit"][method="post"] -->
+
+    <form action="/submit" method="post"></form>
+
+    <!--------------- [[ ex ]] --------------->
+    <!-- ul.list>li.item$@01*5{항목 $} -->
+    <ul class="list">
+      <li class="item1">항목 1</li>
+      <li class="item2">항목 2</li>
+      <li class="item3">항목 3</li>
+      <li class="item4">항목 4</li>
+      <li class="item5">항목 5</li>
+    </ul>
+
     <!-- ul>li.item_$*3 -->
     <ul>
       <li class="item_1"></li>
       <li class="item_2"></li>
       <li class="item_3"></li>
     </ul>
+
+    <!-- p{$}*3 안에 내용은 {} -->
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
   </body>
 </html>
