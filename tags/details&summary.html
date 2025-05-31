@@ -4,10 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>details, summary tag</title>
+    <style>
+      details {
+        border: 1px #000 solid;
+        padding: 10px;
+        margin-top: 30px;
+      }
+      /* details#first_ex summary {
+        border: 3px rgb(255, 0, 179) solid;
+        padding: 15px;
+      }
+      details#first_ex > p {
+        padding: 10px 30px;
+      }
+      details#first_ex > p:nth-of-type(1) {
+        background-color: crimson;
+      }
+      details#first_ex > p:nth-child(3) {
+        background-color: coral;
+      }
+      details#first_ex > p:last-child {
+        background-color: gold;
+      }
+      details#second_ex {
+      } */
+    </style>
   </head>
   <body>
-    <details>
+    <details id="first_ex">
       <summary>제목 넣는 구간</summary>
+      <p>보기_1</p>
+      <p>보기_2</p>
+      <p>보기_3</p>
+    </details>
+
+    <details id="second_ex">
+      <summary>본문 제목</summary>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+        voluptatibus illo magnam necessitatibus fugit, quae accusantium vero
+        laborum provident omnis facilis, possimus corrupti ullam rem totam
+        commodi qui! Laudantium, ullam?
+      </p>
     </details>
   </body>
 </html>
