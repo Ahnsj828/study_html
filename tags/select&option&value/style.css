@@ -1,5 +1,4 @@
 body {
-  border: 1px solid #f00;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -12,6 +11,7 @@ body {
 select {
   width: 300px;
   padding: 10px 20px;
+  color: red;
 }
 
 /* -------------------------------------- */
