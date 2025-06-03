@@ -1,5 +1,23 @@
+body {
+  border: 1px solid #f00;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+select {
+  width: 300px;
+  padding: 10px 20px;
+}
+
+/* -------------------------------------- */
+
 div {
   height: 100px;
-  width: 200px;
+  width: 300px;
   background: red;
 }
