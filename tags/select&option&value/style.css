@@ -8,16 +8,22 @@ body {
   gap: 20px;
 }
 
-select {
-  width: 300px;
-  padding: 10px 20px;
-  color: red;
-}
-
-/* -------------------------------------- */
-
 div {
   height: 100px;
   width: 300px;
+}
+
+select {
+  width: 300px;
+  padding: 10px 20px;
+}
+
+/* --------------여기까지는 개별적으로 준 스타일-------------- */
+
+div {
   background: red;
+}
+
+select {
+  color: red;
 }
