@@ -1,0 +1,18 @@
+/* title은 커스터마이징 불가하지만, 아래는 JS 기반 tooltip 예시용 */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0f484b;
+  color: #ff95fa;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
