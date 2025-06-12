@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Popover 예제</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      [popover] {
+        padding: 15px 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button popovertarget="myPopover">자세히 보기</button>
+
+    <div id="myPopover" popover>
+      📌 이 내용은 버튼 근처에 뜨는 Popover입니다!<br />
+      여기에 설명이나 설정 메뉴 같은 걸 넣을 수 있어요.
+    </div>
+  </body>
+</html>
